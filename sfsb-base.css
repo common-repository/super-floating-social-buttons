@@ -1,0 +1,137 @@
+#fsml_ff {
+	background-color: #fff;
+	min-width: 28px;
+	width: 61px;
+	max-width: 100px;
+	position: fixed; /* the clean floating, without any js animations or delay */
+	margin: 0 1%;
+	padding: 0;
+	z-index: 9999; /* if we need to go higher, than whatever's positioned there is probably more important. Browser rejector (recommended companion to this plugin) runs at 30,000... */
+
+	/* get rid of all of the residual css junk from themes that messes up spacing... */
+	line-height: 100%;
+	font-size: 0;
+}
+img.fsml_fficon {
+	padding: 0;
+	border: none;
+}
+#fsml_ff a {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+#fsml_hide {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 14%;
+}
+.fsml_xlr {
+
+}
+.fsml_xlr:hover {
+	cursor: pointer;
+}
+.fsmlopenclose {
+	opacity: .7;
+}
+.fsmlopenclose:hover {
+	opacity: 1;
+}
+#fsml_ff a#fsml_edit {
+	top: 0;
+	position: absolute;
+	float: left;
+	color: rgba(50, 50, 50, 0.7);
+	cursor: pointer;
+	background-color: rgba(255,255,255,.3);
+	z-index: 10001;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	line-height: 10px;
+	text-decoration: none;
+	
+	padding: 3px;
+	margin: 0 0 0 8px;
+}
+#fsml_ff a#fsml_edit:hover {
+	color: #000;
+	background-color: #fff;
+}
+#fsml_ffmain{
+	margin-top: 5px;
+	padding: 0 8%;
+}
+.fsml_fflink {
+	width: 100%;
+	overflow: hidden;/*should force height to match contents*/
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+img.fsml_fficon {
+	width: 100%; 
+	border-radius: 8px; 
+	border: none;
+	opacity:0.8; 
+	filter:alpha(opacity=80);
+	margin: 0;
+	padding: 0;
+}
+#fsml_ffmain a:last-child {
+	margin: 0;
+}
+img.fsml_fficon:hover {
+	opacity:1; 
+	filter:alpha(opacity=100);
+}
+.fsml_showhide:hover {
+	cursor: pointer;
+}
+#fsml_ffhidden {
+	display: none; 
+	
+	padding: 0;
+	border-top-left-radius: 6px; 
+	border-bottom-left-radius: 6px;
+	box-shadow: 0 0 5px #000;
+	background-color: #fff; 
+	color: #000; 
+	font-size: 0;
+	line-height: 100%;
+	
+	position: fixed;
+	margin: 0; 
+	padding: 0;
+}
+#fsml_ffhidden img {
+	margin: 0; 
+	height: 10px;
+	width: 10px;
+	padding: 2px;
+}
+img#fsml_ytsub {
+	width: 90%;
+	padding: 0 5%;
+	margin: 0 0 5px 0; 
+	background-color: #ddd;
+	border-radius: 3px; 
+	box-shadow: 0 0 2px #000;
+} 
+#fsml_ytsub:hover {
+	box-shadow: 0 0 4px #000; 
+}
+#fsml_twfollow {
+	width: 100%;
+	margin: 0 0 5px 0;
+	border-radius: 3px;
+	box-shadow: 0 0 2px #000;
+}
+#fsml_twfollow:hover {
+	box-shadow: 0 0 4px #000;
+}
+@media print {
+	#fsml_ff { display: none; }
+	#fsml_ffhidden { display: none; }
+}
